@@ -1,0 +1,32 @@
+{
+  "name": "Survey",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "quality": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "expertise": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "culture": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "string_comments": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
