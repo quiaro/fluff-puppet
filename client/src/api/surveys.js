@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const host = 'https://rest-api-boilerplate-sinvtjgbzy.now.sh';
+const host = '';
 
 /**
  * Fetch books

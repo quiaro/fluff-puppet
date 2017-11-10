@@ -5,7 +5,7 @@ import { surveyAdded } from '../actions/surveys';
 import escape from 'validator/lib/escape';
 import styled from 'styled-components';
 
-const StyledForm = styled.div`
+const StyledForm = styled.form`
   background-color: #e0e0e0;
   box-shadow: 0 0 8px 2px rgba(0,0,0,.2);
   border-radius: 10px;
@@ -108,7 +108,6 @@ class AddSurvey extends React.Component {
 
     addSurvey(form)
       .then(() => {
-        console.log('form data: ', form); // eslint-disable-line
         this.props.surveyAdded(form);
         this.props.history.push('/');
       })
